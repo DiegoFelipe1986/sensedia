@@ -3,25 +3,126 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --dark: #3d3d3d;
+  --primary: #8556AA;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+.main-header{
+  background-color: var(--dark);
+  padding: 20px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.welcome-header{
+  padding: 20px;
+  display: flex;
+}
+
+.welcome-text{
+  padding-left: 10px;
+  color: var(--primary)
+}
+
+.flex-container {
+  display: flex;
+}
+.purple-header{
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.footer{
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+
+  bottom: 0;
+  width: 100%;
+  height: 87px;
+}
+
+.form-input{
+  background-color: #F5F5F5;
+  color: #6A6A6A;
+  padding:0px 8px 0px 8px;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 35px;
+}
+
+.form-register{
+  border: 1px solid rgb(209 213 219);
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+
+.primary-button{
+  background-color: var(--primary);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.primary-button:hover{
+  background-color: #fff;;
+  color: var(--primary);
+  border:1px solid rgb(209 213 219);
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button{
+  background-color: #fff;;
+  color: var(--primary);
+  padding: 5px 15px;
+  border-radius: 15px;
+  border:1px solid rgb(209 213 219);
+}
+
+.secondary-button:hover{
+  background-color: var(--primary);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.errors-message{
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button{
+  background-color: #fff;
+  border: 1px solid grey;
+  color: grey;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.banner-text{
+  color: grey;
+}
+.icon{
+  width: 40px;
+}
+
+.icon-trash {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
