@@ -22,7 +22,7 @@ Navigate to the project folder:
     cd sensedia
 ```
 
-##Create a local environment file:
+Create a local environment file:
 
 ```bash
 
@@ -49,9 +49,6 @@ Configuration
 .env.local
 Ensure that the .env.local file is correctly configured. This file includes environment-specific variables, such as the backend API URL.
 
-env
-
-NEXT_PUBLIC_API_BASE_URL=http://localhost:8080/api/v1
 
 Contributing
 
